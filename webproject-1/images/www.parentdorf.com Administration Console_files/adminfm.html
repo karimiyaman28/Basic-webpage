@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<!-- saved from url=(0321)https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&lang=en_EN&popup=0&field_id=custom_76&akey=key&fldr=%2F&6108d94dae389&reload=1&fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&rand=20210803055111 -->
+<html xmlns="https://www.w3.org/1999/xhtml" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio no-localstorage no-sessionstorage webworkers no-applicationcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="robots" content="noindex,nofollow">
+        <title>Responsive Filemanager</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <link rel="shortcut icon" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/img/ico/favicon.ico">
+        <link href="./bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="./bootstrap-lightbox.min.css" rel="stylesheet" type="text/css">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link href="./dropzone.min.css" type="text/css" rel="stylesheet">
+        <script>console.log("Error: Spritemap not found!");</script>        <style>
+            .loading{
+                padding: 5px 8px;
+                border-radius: 2px;
+                position: relative;
+                top: 1px;
+                left: 4px;
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+            }
+            .dropzone .dz-default.dz-message,
+            .dropzone .dz-preview .dz-error-mark,
+            .dropzone-previews .dz-preview .dz-error-mark,
+            .dropzone .dz-preview .dz-success-mark,
+            .dropzone-previews .dz-preview .dz-success-mark,
+            .dropzone .dz-preview .dz-progress .dz-upload,
+            .dropzone-previews .dz-preview .dz-progress .dz-upload {
+                background-image: url(img/spritemap_en_EN.png);
+            }
+
+            @media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
+                .dropzone .dz-default.dz-message,
+                .dropzone .dz-preview .dz-error-mark,
+                .dropzone-previews .dz-preview .dz-error-mark,
+                .dropzone .dz-preview .dz-success-mark,
+                .dropzone-previews .dz-preview .dz-success-mark,
+                .dropzone .dz-preview .dz-progress .dz-upload,
+                .dropzone-previews .dz-preview .dz-progress .dz-upload {
+                    background-image: url(img/spritemap_en_EN.png);
+                }
+            }
+        </style>
+        <link href="./jquery.contextMenu.min.css" rel="stylesheet" type="text/css">
+        <link href="./bootstrap-modal.min.css" rel="stylesheet" type="text/css">
+        <link href="./jplayer.blue.monday.css" rel="stylesheet" type="text/css">
+        <link href="./css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./sweetalert.min.css">
+        <!--[if lt IE 8]><style>
+            .img-container span, .img-container-mini span {
+                display: inline-block;
+                height: 100%;
+            }
+        </style><![endif]-->
+        <script type="text/javascript" src="./jquery.min.js.download"></script>
+        <script type="text/javascript" src="./sweetalert.min.js.download"></script>
+        <script src="./image-validator.js.download" type="text/javascript"></script>
+        <script type="text/javascript">
+            if (typeof jQuery === 'undefined')
+            {
+                document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+        <script type="text/javascript" src="./bootstrap.min.js.download"></script>
+        <script type="text/javascript" src="./bootstrap-lightbox.min.js.download"></script>
+        <script type="text/javascript" src="./dropzone.min.js.download"></script>
+        <script type="text/javascript" src="./jquery.touchSwipe.min.js.download"></script>
+        <script type="text/javascript" src="./modernizr.custom.js.download"></script>
+        <script type="text/javascript" src="./bootbox.min.js.download"></script>
+        <script type="text/javascript" src="./bootstrap-modal.min.js.download"></script>
+        <script type="text/javascript" src="./bootstrap-modalmanager.min.js.download"></script>
+        <script type="text/javascript" src="./jquery.jplayer.min.js.download"></script>
+        <script type="text/javascript" src="./imagesloaded.pkgd.min.js.download"></script>
+        <script type="text/javascript" src="./jquery.queryloader2.min.js.download"></script>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+        <![endif]-->
+        <script src="./jquery.ui.position.min.js.download" type="text/javascript"></script>
+        <script src="./jquery-ui-1.10.4.custom.js.download" type="text/javascript"></script>
+        <script src="./jquery.contextMenu.min.js.download" type="text/javascript"></script>
+
+
+
+        <script>
+            var ext_img=new Array('jpg','jpeg','png','gif','bmp','tiff','svg','webp','epub','ico','jfif');
+            var allowed_ext=new Array('jpg','jpeg','png','gif','bmp','tiff','svg','webp','epub','ico','jfif','xlsm','ttf','doc','docx','rtf','pdf','xls','xlsx','txt','csv','html','xhtml','psd','sql','log','fla','xml','ade','adp','mdb','accdb','ppt','pptx','odt','ots','ott','odb','odg','otp','otg','odf','ods','odp','css','ai','woff','eot','woff2','zip','rar','gz','tar','iso','dmg','mov','mpeg','mp4','avi','mpg','wma','flv','webm','mp3','m4a','ac3','aiff','mid','ogg','wav');
+            var loading_bar=true;
+            var image_editor=true;
+            var ajaxUrl  = '//www.parentdorf.com/wapi/widget';
+            var filePath = '/home/findades/public_html/admin/filemanager/dialog.php';
+            var admin_id = '1';
+            //dropzone config
+            Dropzone.options.myAwesomeDropzone = {
+                dictInvalidFileType: "File extension is not allowed.",
+                dictFileTooBig: "The uploaded file exceeds the max size allowed.",
+                dictResponseError: "SERVER ERROR",
+                paramName: "file", // The name that will be used to transfer the file
+                maxFilesize: 100, // MB
+                url: "upload.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e",
+                acceptedFiles: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,application/vnd.ms-excel.sheet.macroenabled.12,image/*,application/pdf,application/epub+zip,text/xml,application/xml,application/font-woff,application/font-woff2,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,.ttf,.woff,.woff2,.jfif,.eot',
+                accept: function(file, done) {
+                    const imageValidatorObject = new imageValidator(
+                        {
+                            image:file,
+                            ajaxUrl:ajaxUrl,
+                            success:function(){
+                                done();
+                            },
+                            progress:function(){
+                            },
+                            completed:function(){
+                            },
+                            error:function(){
+                                swal('File extension is not allowed.');
+                            },
+                            extraParams:{}
+                        }
+                    );
+
+                    var extension   = file.name.split('.').pop();
+                    extension       = extension.toLowerCase();
+
+                    extraParams = {};
+                    extraParams.imageName          = file.name;
+                    extraParams.imageExtension     = extension;
+                    extraParams.imageSize          = file.size;
+                    extraParams.imageMimeType      = file.type;
+                    extraParams.isFromFileManager  = true;
+                    extraParams.pathFile        = filePath;
+                    extraParams.userId             = admin_id;
+                    extraParams.validationType      = "all";
+                    imageValidatorObject.setExtraParams(extraParams);
+                    imageValidatorObject.run();
+                }
+            };
+
+        </script>
+        <script type="text/javascript" src="./include.js.download"></script>
+    </head>
+    <body class="no-touch">
+    <input type="hidden" id="popup" value="">
+    <input type="hidden" id="view" value="0">
+    <input type="hidden" id="cur_dir" value="/images/">
+    <input type="hidden" id="cur_dir_thumb" value="/home/wstan14286/public_html/uploads/">
+    <input type="hidden" id="insert_folder_name" value="Insert folder name:">
+    <input type="hidden" id="new_folder" value="">
+    <input type="hidden" id="ok" value="OK">
+    <input type="hidden" id="cancel" value="Cancel">
+    <input type="hidden" id="rename" value="Rename">
+    <input type="hidden" id="lang_duplicate" value="Duplicate">
+    <input type="hidden" id="duplicate" value="0">
+    <input type="hidden" id="base_url" value="https://www.parentdorf.com">
+    <input type="hidden" id="base_url_true" value="https://www.parentdorf.com">
+    <input type="hidden" id="fldr_value" value="">
+    <input type="hidden" id="sub_folder" value="">
+    <input type="hidden" id="file_number_limit_js" value="500">
+    <input type="hidden" id="descending" value="false">
+        <input type="hidden" id="current_url" value="http://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111">
+    <input type="hidden" id="lang_show_url" value="Copy URL">
+    <input type="hidden" id="copy_cut_files_allowed" value="0">
+    <input type="hidden" id="copy_cut_dirs_allowed" value="0">
+    <input type="hidden" id="copy_cut_max_size" value="100">
+    <input type="hidden" id="copy_cut_max_count" value="200">
+    <input type="hidden" id="lang_copy" value="Copy">
+    <input type="hidden" id="lang_cut" value="Cut">
+    <input type="hidden" id="lang_paste" value="Paste">
+    <input type="hidden" id="lang_paste_here" value="Paste to this directory">
+    <input type="hidden" id="lang_paste_confirm" value="Are you sure you want to paste to this directory? This will overwrite existing files/folders if encountered any.">
+    <input type="hidden" id="lang_files_on_clipboard" value="There are files on the clipboard.">
+    <input type="hidden" id="clipboard" value="0">
+    <input type="hidden" id="lang_clear_clipboard_confirm" value="Are you sure you want to clear the clipboard?">
+    <input type="hidden" id="lang_file_info" value="FILE INFO">
+    <input type="hidden" id="lang_edit_image" value="Image Filters">
+    <input type="hidden" id="lang_extract" value="Extract here">
+    <input type="hidden" id="transliteration" value="false">
+            <!-- uploader div start -->
+
+        <div class="uploader" style="width: 976px;">
+            <center><a href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111" class="btn btn-inverse" style="font-weight:bold;"><i style="vertical-align: middle; margin-right: 2px;" class="fa fa-reply"></i> Back to All Media</a></center>
+            <div class="space10"></div><div class="space10"></div>
+            <div class="tabbable upload-tabbable"> <!-- Only required for left/right tabs -->
+                                        <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" enctype="multipart/form-data" id="myAwesomeDropzone" class="dropzone dz-clickable">
+                            <input type="hidden" name="path" value="/home/wstan14286/public_html/images/">
+                            <input type="hidden" name="path_thumb" value="/home/wstan14286/public_html/uploads/">
+                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div></form>
+                    <div class="upload-help">Drag &amp; Drop files or click in the area above (modern browsers) and select the file(s). When the upload is complete, click the 'Return to files list' button.</div>
+                                    </div>
+            </div>
+        
+
+        
+        <!-- uploader div start -->
+
+        <div class="container-fluid">
+
+                <!-- header div start -->
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid" style="padding-left: 0px ! important;">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="brand">Toolbar -&gt;</div>
+                    <div class="nav-collapse collapse">
+                        <div class="filters">
+                            <div class="row-fluid">
+                                <div class="span6 half">
+                                                                            <button style="margin-left: 7px;background:#006fbb;border-color:#006fbb; " class="tip btn upload-btn btn-primary" title="" data-original-title="Upload"><i class="fa fa-upload" style="vertical-align: middle; margin-right: 2px;font-size: 1.2em;"></i> Upload Image or  PDF</button>
+                                                                                                                <button class="tip btn new-folder" title="" data-original-title="New Folder"><i class="icon-plus"></i><i class="icon-folder-open"></i></button>
+                                                                        
+                                    <div class="view-controller" style="margin-top: 2px;margin-left:15px;">
+                                        <!--
+               <span>View:</span>
+-->
+                                        <button class="btn tip btn-inverse" id="view0" data-value="0" title="" data-original-title="Box view"><i class="icon-th icon-white"></i></button>
+                                        <button class="btn tip" id="view1" data-value="1" title="" data-original-title="List view"><i class="icon-align-justify "></i></button>
+                                        <!-- <button class="btn tip" id="view2" data-value="2" title="Columns list view"><i class="icon-fire "></i></button> -->
+                                    </div>
+
+                                </div>
+
+                                <div class="span6 half types">
+                                    <!--
+            <span>Filters:</span>
+-->
+                                    
+                                    <input style="text-transform: capitalize;" accesskey="f" type="text" class="filter-input filter-input-notype" id="filter-input" name="filter" placeholder="filter by name" value="">                                    <input id="select-type-all" name="radio-sort" type="radio" data-item="ff-item-type-all" class="hide">
+                                    <label id="ff-item-type-all" title="" style="visibility: hidden; width: 0px; padding: 1px 1px 2px;" data-item="ff-item-type-all" for="select-type-all" class="tip btn btn-inverse ff-label-type-all" data-original-title="All"><i class="icon-align-justify icon-white"></i></label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header div end -->
+
+        <!-- breadcrumb div start -->
+
+        <div class="row-fluid">
+                        <ul class="breadcrumb" style="padding-right:0;">
+                <li style="margin-top: 7px; margin-left: -10px; display:block;">
+                    <div class="alert" style="padding: 8px 10px 8px 10px;color: #20364e;background: #fafafa;border-radius: 0;border-color:#d7d7d7;text-shadow:none;border-left: 4px solid #006fbb;width:100%;">
+                  <span style="float:left;">
+                     <strong>
+                        <i class="fa fa-info-circle" style="color:#006fbb"></i>
+                        SUPPORTED –
+                        </strong>
+                        gif, jpeg, jpg, png, svg, webp, pdf, doc, docx, xls, xlsm, ppt, pptx, epub, xml
+                  </span>
+                        <span style="float:right;">
+                     <strong>
+                        <i class="fa fa-check-circle" style="color:#006fbb"></i>
+                        PRO TIP –
+                     </strong>
+                     Right click on images to copy the file URL
+                  </span>
+                        <div class="clear clearfix"></div>
+                    </div>
+                </li>
+                <!--
+   <li class="pull-left"><a href="dialog.php?type=1&fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&lang=en_EN&popup=0&field_id=custom_76&akey=key&fldr=/"><i class="icon-home"></i></a></li>
+   <li><span class="divider">/</span></li>
+   
+   <li class="pull-right"><a class="btn-small" href="javascript:void('')" id="info"><i class="icon-question-sign"></i></a></li>
+   <li class="pull-right"><a id="refresh" class="btn-small" href="dialog.php?type=1&fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&lang=en_EN&popup=0&field_id=custom_76&akey=key&fldr=&6108d94f6fda9"><i class="icon-refresh"></i></a></li>
+-->
+
+            </ul>
+        </div>
+        <!-- breadcrumb div end -->
+        <div class="row-fluid ff-container">
+            <div class="span12">
+                                <h4 id="help">Swipe the name of file/folder to show options</h4>
+                                                <!-- sorter -->
+                <div class="sorter-container list-view0">
+                    <div class="file-name"><a class="sorter sort-name " href="javascript:void(&#39;&#39;)" data-sort="name">Filename</a></div>
+                    <div class="file-date"><a class="sorter sort-date ascending" href="javascript:void(&#39;&#39;)" data-sort="date">Date</a></div>
+                    <div class="file-size"><a class="sorter sort-size " href="javascript:void(&#39;&#39;)" data-sort="size">Size</a></div>
+                    <div class="img-dimension">Dimension</div>
+                    <div class="file-extension"><a class="sorter sort-extension " href="javascript:void(&#39;&#39;)" data-sort="extension">Type</a></div>
+                    <div class="file-operations">Operations</div>
+                </div>
+                
+                <input type="hidden" id="file_number" value="79">
+                <!--ul class="thumbnails ff-items"-->
+                <ul class="grid cs-style-2 list-view0" id="main-item-container">
+                                            <li data-name="member_uploads" class="dir ui-draggable ui-droppable">   <figure data-name="member_uploads" class="directory" data-type="dir">
+                                <a class="folder-link" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=member_uploads%2F&amp;6108d94f6fed9">
+                                    <div class="img-precontainer">
+                                        <div class="img-container directory"><span></span>
+                                            <img class="directory-img" src="./folder.jpg" alt="folder">
+                                        </div>
+                                    </div>
+                                    <div class="img-precontainer-mini directory">
+                                        <div class="img-container-mini">
+                                            <span></span>
+                                            <img class="directory-img" src="./folder.png" alt="folder">
+                                        </div>
+                                    </div>
+                                                                        </a>
+                                    <div class="box">
+                                        <h4 class="ellipsis"><a class="folder-link" data-file="member_uploads" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=member_uploads%2F&amp;6108d94f6ff13">member_uploads</a></h4>
+                                    </div>
+                                    <input type="hidden" class="name" value="">
+                                    <input type="hidden" class="date" value="1595632287">
+                                    <input type="hidden" class="size" value="170512">
+                                    <input type="hidden" class="extension" value="dir">
+                                    <div class="file-date">20-07-24</div>
+                                    <div class="file-size">167 KB</div>                                    <div class="file-extension">dir</div>
+                                    <figcaption>
+                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-folder" title="" data-path="member_uploads" data-thumb="/home/wstan14286/public_html/uploads/member_uploads" data-original-title="Rename">
+                                            <i class="icon-pencil "></i></a>
+                                        <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-folder" title="" data-confirm="Are you sure to delete the folder and all the elements in it?" data-path="member_uploads" data-thumb="/home/wstan14286/public_html/uploads/member_uploads" data-original-title="Erase">
+                                            <i class="icon-trash "></i>
+                                        </a>
+                                    </figcaption>
+                                                            </figure>
+                        </li>
+                                            <li class="ff-item-type-2 file ui-draggable" data-name="one1.jpg">    <figure data-name="one1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/one1.jpg&#39;, &#39;*&#39;)" class="link" data-file="one1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com one1 thumbnails" class=" " src="./one1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="one1 thumbnails" class=" " src="./one1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="one1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        one1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627622252">
+                            <input type="hidden" class="size" value="3071">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-30</div>
+                            <div class="file-size">3 KB</div>
+                            <div class="img-dimension">300x168</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form2">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="one1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form2&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/one1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="one1.jpg" data-thumb="/home/wstan14286/public_html/uploads/one1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="one1.jpg" data-thumb="/home/wstan14286/public_html/uploads/one1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="gray1.jpg">    <figure data-name="gray1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/gray1.jpg&#39;, &#39;*&#39;)" class="link" data-file="gray1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com gray1 thumbnails" class=" " src="./gray1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="gray1 thumbnails" class=" " src="./gray1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="gray1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        gray1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627622219">
+                            <input type="hidden" class="size" value="1729">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-30</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">275x183</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form3">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="gray1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form3&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/gray1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="gray1.jpg" data-thumb="/home/wstan14286/public_html/uploads/gray1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="gray1.jpg" data-thumb="/home/wstan14286/public_html/uploads/gray1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg">    <figure data-name="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg&#39;, &#39;*&#39;)" class="link" data-file="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                    <div class="filetype">jpg</div>                                    <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8 thumbnails" class=" icon" src="./c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg ">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                            </div>
+                                </div>
+                                                                    <div class="cover"></div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627578783">
+                            <input type="hidden" class="size" value="7737">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">8 KB</div>
+                            <div class="img-dimension">290x174</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form4">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form4&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-thumb="/home/wstan14286/public_html/uploads/c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-thumb="/home/wstan14286/public_html/uploads/c1b984c6f17fd1e9dad8923b5eee0d83e5a0b8c8.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg">    <figure data-name="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/78058e254f03d856e14afe0c148c92a8a839b7ca.jpg&#39;, &#39;*&#39;)" class="link" data-file="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                    <div class="filetype">jpg</div>                                    <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 78058e254f03d856e14afe0c148c92a8a839b7ca thumbnails" class=" icon" src="./78058e254f03d856e14afe0c148c92a8a839b7ca.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg ">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                            </div>
+                                </div>
+                                                                    <div class="cover"></div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        78058e254f03d856e14afe0c148c92a8a839b7ca</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627578673">
+                            <input type="hidden" class="size" value="7737">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">8 KB</div>
+                            <div class="img-dimension">290x174</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form5">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form5&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-thumb="/home/wstan14286/public_html/uploads/78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-thumb="/home/wstan14286/public_html/uploads/78058e254f03d856e14afe0c148c92a8a839b7ca.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="639cee14ca3d04d00b01734d4970c9251312aba7.png">    <figure data-name="639cee14ca3d04d00b01734d4970c9251312aba7.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/639cee14ca3d04d00b01734d4970c9251312aba7.png&#39;, &#39;*&#39;)" class="link" data-file="639cee14ca3d04d00b01734d4970c9251312aba7.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                    <div class="filetype">png</div>                                    <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 639cee14ca3d04d00b01734d4970c9251312aba7 thumbnails" class=" icon" src="./639cee14ca3d04d00b01734d4970c9251312aba7.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png ">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                            </div>
+                                </div>
+                                                                    <div class="cover"></div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="639cee14ca3d04d00b01734d4970c9251312aba7.png" data-field_id="custom_76" data-function="apply_img">
+                                        639cee14ca3d04d00b01734d4970c9251312aba7</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627578156">
+                            <input type="hidden" class="size" value="5237">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">5 KB</div>
+                            <div class="img-dimension">225x225</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form6">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="639cee14ca3d04d00b01734d4970c9251312aba7.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form6&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/639cee14ca3d04d00b01734d4970c9251312aba7.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="639cee14ca3d04d00b01734d4970c9251312aba7.png" data-thumb="/home/wstan14286/public_html/uploads/639cee14ca3d04d00b01734d4970c9251312aba7.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="639cee14ca3d04d00b01734d4970c9251312aba7.png" data-thumb="/home/wstan14286/public_html/uploads/639cee14ca3d04d00b01734d4970c9251312aba7.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg">    <figure data-name="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg&#39;, &#39;*&#39;)" class="link" data-file="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                    <div class="filetype">jpg</div>                                    <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234 thumbnails" class=" icon" src="./5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg ">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                            </div>
+                                </div>
+                                                                    <div class="cover"></div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627578063">
+                            <input type="hidden" class="size" value="2269">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">300x168</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form7">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form7&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-thumb="/home/wstan14286/public_html/uploads/5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-thumb="/home/wstan14286/public_html/uploads/5c7c1a3ad252d0fb666bacf6b190cb7d1e1c8234.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="email.png">    <figure data-name="email.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/email.png&#39;, &#39;*&#39;)" class="link" data-file="email.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com email thumbnails" class=" " src="./email.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="email thumbnails" class=" " src="./email(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="email.png" data-field_id="custom_76" data-function="apply_img">
+                                        email</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627576284">
+                            <input type="hidden" class="size" value="16097">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">16 KB</div>
+                            <div class="img-dimension">920x512</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form8">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="email.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form8&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/email.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="email.png" data-thumb="/home/wstan14286/public_html/uploads/email.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="email.png" data-thumb="/home/wstan14286/public_html/uploads/email.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="invoice.png">    <figure data-name="invoice.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/invoice.png&#39;, &#39;*&#39;)" class="link" data-file="invoice.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com invoice thumbnails" class=" " src="./invoice.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="invoice thumbnails" class=" " src="./invoice(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="invoice.png" data-field_id="custom_76" data-function="apply_img">
+                                        invoice</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627576228">
+                            <input type="hidden" class="size" value="5657">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">6 KB</div>
+                            <div class="img-dimension">286x176</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form9">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="invoice.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form9&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/invoice.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="invoice.png" data-thumb="/home/wstan14286/public_html/uploads/invoice.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="invoice.png" data-thumb="/home/wstan14286/public_html/uploads/invoice.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="google.png">    <figure data-name="google.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/google.png&#39;, &#39;*&#39;)" class="link" data-file="google.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com google thumbnails" class=" " src="./google.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="google thumbnails" class=" " src="./google(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="google.png" data-field_id="custom_76" data-function="apply_img">
+                                        google</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627576158">
+                            <input type="hidden" class="size" value="4554">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">4 KB</div>
+                            <div class="img-dimension">225x225</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form10">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="google.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form10&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/google.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="google.png" data-thumb="/home/wstan14286/public_html/uploads/google.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="google.png" data-thumb="/home/wstan14286/public_html/uploads/google.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="member.png">    <figure data-name="member.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/member.png&#39;, &#39;*&#39;)" class="link" data-file="member.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com member thumbnails" class=" " src="./member.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="member thumbnails" class=" " src="./member(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="member.png" data-field_id="custom_76" data-function="apply_img">
+                                        member</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627576033">
+                            <input type="hidden" class="size" value="1646">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">290x174</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form11">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="member.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form11&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/member.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="member.png" data-thumb="/home/wstan14286/public_html/uploads/member.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="member.png" data-thumb="/home/wstan14286/public_html/uploads/member.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="social-media.jpg">    <figure data-name="social-media.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/social-media.jpg&#39;, &#39;*&#39;)" class="link" data-file="social-media.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com social-media thumbnails" class=" " src="./social-media.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="social-media thumbnails" class=" " src="./social-media(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="social-media.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        social-media</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627575981">
+                            <input type="hidden" class="size" value="8731">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">9 KB</div>
+                            <div class="img-dimension">224x225</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form12">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="social-media.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form12&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/social-media.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="social-media.jpg" data-thumb="/home/wstan14286/public_html/uploads/social-media.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="social-media.jpg" data-thumb="/home/wstan14286/public_html/uploads/social-media.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="verfify.png">    <figure data-name="verfify.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/verfify.png&#39;, &#39;*&#39;)" class="link" data-file="verfify.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com verfify thumbnails" class=" " src="./verfify.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="verfify thumbnails" class=" " src="./verfify(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="verfify.png" data-field_id="custom_76" data-function="apply_img">
+                                        verfify</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627575935">
+                            <input type="hidden" class="size" value="7511">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-29</div>
+                            <div class="file-size">7 KB</div>
+                            <div class="img-dimension">512x512</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form13">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="verfify.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form13&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/verfify.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="verfify.png" data-thumb="/home/wstan14286/public_html/uploads/verfify.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="verfify.png" data-thumb="/home/wstan14286/public_html/uploads/verfify.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="2_1.jpg">    <figure data-name="2_1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/2_1.jpg&#39;, &#39;*&#39;)" class="link" data-file="2_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 2_1 thumbnails" class=" " src="./2_1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="2_1 thumbnails" class=" " src="./2_1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="2_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        2_1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627426303">
+                            <input type="hidden" class="size" value="2089">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">300x168</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form14">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="2_1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form14&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/2_1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="2_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/2_1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="2_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/2_1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="1_1.jpg">    <figure data-name="1_1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/1_1.jpg&#39;, &#39;*&#39;)" class="link" data-file="1_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 1_1 thumbnails" class=" " src="./1_1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="1_1 thumbnails" class=" " src="./1_1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="1_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        1_1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627426285">
+                            <input type="hidden" class="size" value="1985">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">275x183</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form15">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="1_1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form15&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/1_1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="1_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/1_1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="1_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/1_1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="6.png">    <figure data-name="6.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/6.png&#39;, &#39;*&#39;)" class="link" data-file="6.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 6 thumbnails" class=" " src="./6.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="6 thumbnails" class=" " src="./6(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="6.png" data-field_id="custom_76" data-function="apply_img">
+                                        6</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425165">
+                            <input type="hidden" class="size" value="2166">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">299x168</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form16">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="6.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form16&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/6.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="6.png" data-thumb="/home/wstan14286/public_html/uploads/6.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="6.png" data-thumb="/home/wstan14286/public_html/uploads/6.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="5.jpg">    <figure data-name="5.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/5.jpg&#39;, &#39;*&#39;)" class="link" data-file="5.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 5 thumbnails" class=" " src="./5.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="5 thumbnails" class=" " src="./5(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="5.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        5</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425159">
+                            <input type="hidden" class="size" value="6309">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">6 KB</div>
+                            <div class="img-dimension">266x190</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form17">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="5.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form17&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/5.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="5.jpg" data-thumb="/home/wstan14286/public_html/uploads/5.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="5.jpg" data-thumb="/home/wstan14286/public_html/uploads/5.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="4.png">    <figure data-name="4.png" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/4.png&#39;, &#39;*&#39;)" class="link" data-file="4.png" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 4 thumbnails" class=" " src="./4.png">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype png hide">png</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="4 thumbnails" class=" " src="./4(1).png">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="4.png" data-field_id="custom_76" data-function="apply_img">
+                                        4</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425152">
+                            <input type="hidden" class="size" value="550">
+                            <input type="hidden" class="extension" value="png">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">1 KB</div>
+                            <div class="img-dimension">300x168</div>
+                            <div class="file-extension">png</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form18">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="4.png">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form18&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/4.png" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="4.png" data-thumb="/home/wstan14286/public_html/uploads/4.png" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="4.png" data-thumb="/home/wstan14286/public_html/uploads/4.png" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="3.jpg">    <figure data-name="3.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/3.jpg&#39;, &#39;*&#39;)" class="link" data-file="3.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 3 thumbnails" class=" " src="./3.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="3 thumbnails" class=" " src="./3(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="3.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        3</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425145">
+                            <input type="hidden" class="size" value="2107">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">284x177</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form19">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="3.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form19&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/3.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="3.jpg" data-thumb="/home/wstan14286/public_html/uploads/3.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="3.jpg" data-thumb="/home/wstan14286/public_html/uploads/3.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="2.jpg">    <figure data-name="2.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/2.jpg&#39;, &#39;*&#39;)" class="link" data-file="2.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 2 thumbnails" class=" " src="./2.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="2 thumbnails" class=" " src="./2(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="2.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        2</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425138">
+                            <input type="hidden" class="size" value="1679">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">2 KB</div>
+                            <div class="img-dimension">284x177</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form20">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="2.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form20&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/2.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="2.jpg" data-thumb="/home/wstan14286/public_html/uploads/2.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="2.jpg" data-thumb="/home/wstan14286/public_html/uploads/2.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="1.jpg">    <figure data-name="1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/1.jpg&#39;, &#39;*&#39;)" class="link" data-file="1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com 1 thumbnails" class=" " src="./1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="1 thumbnails" class=" " src="./1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627425132">
+                            <input type="hidden" class="size" value="4459">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">4 KB</div>
+                            <div class="img-dimension">284x177</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form21">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form21&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="1.jpg" data-thumb="/home/wstan14286/public_html/uploads/1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="1.jpg" data-thumb="/home/wstan14286/public_html/uploads/1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="jack_1.jpg">    <figure data-name="jack_1.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/jack_1.jpg&#39;, &#39;*&#39;)" class="link" data-file="jack_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com jack_1 thumbnails" class=" " src="./jack_1.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="jack_1 thumbnails" class=" " src="./jack_1(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="jack_1.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        jack_1</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627424282">
+                            <input type="hidden" class="size" value="21146">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">21 KB</div>
+                            <div class="img-dimension">500x749</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form22">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="jack_1.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form22&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/jack_1.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="jack_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/jack_1.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="jack_1.jpg" data-thumb="/home/wstan14286/public_html/uploads/jack_1.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="image.jpg">    <figure data-name="image.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/image.jpg&#39;, &#39;*&#39;)" class="link" data-file="image.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com image thumbnails" class=" " src="./image.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="image thumbnails" class=" " src="./image(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="image.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        image</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627419562">
+                            <input type="hidden" class="size" value="9384">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">9 KB</div>
+                            <div class="img-dimension">389x129</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form23">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="image.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form23&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/image.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="image.jpg" data-thumb="/home/wstan14286/public_html/uploads/image.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="image.jpg" data-thumb="/home/wstan14286/public_html/uploads/image.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="marks.jpg">    <figure data-name="marks.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/marks.jpg&#39;, &#39;*&#39;)" class="link" data-file="marks.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com marks thumbnails" class=" " src="./marks.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="marks thumbnails" class=" " src="./marks(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="marks.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        marks</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627418737">
+                            <input type="hidden" class="size" value="7577">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">7 KB</div>
+                            <div class="img-dimension">275x183</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form24">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="marks.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form24&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/marks.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="marks.jpg" data-thumb="/home/wstan14286/public_html/uploads/marks.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="marks.jpg" data-thumb="/home/wstan14286/public_html/uploads/marks.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                                    <li class="ff-item-type-2 file ui-draggable" data-name="jack.jpg">    <figure data-name="jack.jpg" data-type="img">
+                            <a href="javascript:window.parent.parent.postMessage(&#39;custom_76|/images/jack.jpg&#39;, &#39;*&#39;)" class="link" data-file="jack.jpg" data-field_id="custom_76" data-function="apply_img">
+                                <div class="img-precontainer">
+                                                                        <div class="img-container">
+                                        <span></span>
+                                        <img alt="www.parentdorf.com jack thumbnails" class=" " src="./jack.jpg">
+                                    </div>
+                                </div>
+                                <div class="img-precontainer-mini original-thumb">
+                                    <div class="filetype jpg hide">jpg</div>
+                                    <div class="img-container-mini">
+                                        <span></span>
+                                                                                    <img alt="jack thumbnails" class=" " src="./jack(1).jpg">
+                                                                            </div>
+                                </div>
+                                                            </a>
+                            <div class="box">
+                                <h4 class="ellipsis"><a href="javascript:void(&#39;&#39;)" class="link" data-file="jack.jpg" data-field_id="custom_76" data-function="apply_img">
+                                        jack</a> </h4>
+                            </div>
+                            <input type="hidden" class="date" value="1627417376">
+                            <input type="hidden" class="size" value="8807">
+                            <input type="hidden" class="extension" value="jpg">
+                            <input type="hidden" class="name" value="">
+                            <div class="file-date">21-07-27</div>
+                            <div class="file-size">9 KB</div>
+                            <div class="img-dimension">275x183</div>
+                            <div class="file-extension">jpg</div>
+                            <figcaption>
+                                <form action="https://www.parentdorf.com/directory/cdn/admin/filemanager/force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="form25">
+                                    <input type="hidden" name="path" value="">
+                                    <input type="hidden" class="name_download" name="name" value="jack.jpg">
+
+                                    <a title="" class="tip-right" href="javascript:void(&#39;&#39;)" onclick="$(&#39;#form25&#39;).submit();" data-original-title="Download"><i class="icon-download"></i></a>
+                                                                            <a class="tip-right preview" title="" data-url="http://www.parentdorf.com/images/jack.jpg" data-toggle="lightbox" href="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111#previewLightbox" data-original-title="Preview"><i class=" icon-eye-open"></i></a>
+                                                                        <a href="javascript:void(&#39;&#39;)" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="jack.jpg" data-thumb="/home/wstan14286/public_html/uploads/jack.jpg" data-original-title="Rename">
+                                        <i class="icon-pencil "></i></a>
+
+                                    <a href="javascript:void(&#39;&#39;)" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="jack.jpg" data-thumb="/home/wstan14286/public_html/uploads/jack.jpg" data-original-title="Erase">
+                                        <i class="icon-trash "></i>
+                                    </a>
+                                </form>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul></div>
+
+            
+                    </div>
+    </div>
+    <div style="display: inline-block;width: 100%;border: 1px solid #ddd;margin-top: 10px;padding: 10px;background: #fff;font-size:14px;">
+        <span style="font-weight: bold;vertical-align: middle;">
+            Showing <span class="loaded_amount">25</span> of 77 Images
+        </span>
+
+        <button class="load_more btn" style="margin: 0 10px;">Load More</button>
+        <button class="load_all btn">Load All</button>
+        <span class="loading">
+            Loading Images... <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size: 20px;"></i>
+      </span>
+    </div>
+    
+    <script id="lazy_filemanager_li" type="text/x-handlebars-template">
+        <li class="ff-item-type-2 file ui-draggable" data-name="{{file}}">
+            <figure data-name="{{file}}" data-type="img">
+                <a href="javascript:window.parent.parent.postMessage('custom_76|/images/{{file_js}}', '*');" class="link" data-file="{{file}}" data-field_id="custom_76" data-function="apply_img">
+                    <div class="img-precontainer">
+                        <div class="img-container">
+                            <span></span>
+                            <img alt="bg thumbnails" class=" " src="{{path}}{{file}}">
+                        </div>
+                    </div>
+                    <div class="img-precontainer-mini original-thumb">
+                        <div class="filetype jpg hide">{{extension}}</div>
+                        <div class="img-container-mini">
+                            <span></span>
+                            <img alt="bg thumbnails" class=" " src="{{mini_src}}">
+                        </div>
+                    </div>
+                </a>
+                <div class="box">
+                    <h4 class="ellipsis">
+                        <a href="javascript:void('')" class="link" data-file="{{file}}" data-field_id="custom_76" data-function="apply_img">
+                            {{filename}}
+                        </a>
+                    </h4>
+                </div>
+                <input type="hidden" class="date" value="1520387386">
+                <input type="hidden" class="size" value="141237">
+                <input type="hidden" class="extension" value="jpg">
+                <input type="hidden" class="name" value="">
+                <div class="file-date">{{date}}</div>
+                <div class="file-size">{{size}}</div>
+                <div class="img-dimension">{{img_width}}x{{img_height}}</div>
+                <div class="file-extension">{{extension}}</div>
+                <figcaption>
+                    <form action="force_download.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e" method="post" class="download-form" id="{{form_id}}">
+
+                        <input type="hidden" name="path" value="">
+                        <input type="hidden" class="name_download" name="name" value="{{file}}">
+
+                        <a title="" class="tip-right" href="javascript:void('')" onclick="$('#{{form_id}}').submit();" data-original-title="Download">
+                            <i class="icon-download"></i>
+                        </a>
+
+                        <a class="tip-right preview" title="" data-url="/images/{{file}}" data-toggle="lightbox" href="#previewLightbox" data-original-title="Preview">
+                            <i class=" icon-eye-open"></i>
+                        </a>
+
+                        <a href="javascript:void('')" class="tip-left edit-button rename-file-paths rename-file" title="" data-path="{{file}}" data-thumb="{{mini_src}}" data-original-title="Rename">
+                            <i class="icon-pencil "></i>
+                        </a>
+
+                        <a href="javascript:void('')" class="tip-left erase-button delete-file" title="" data-confirm="Are you sure you want to delete this file?" data-path="{{file}}" data-thumb="{{mini_src}}" data-original-title="Erase">
+                            <i class="icon-trash "></i>
+                        </a>
+                    </form>
+                </figcaption>
+            </figure>
+        </li>
+    </script>
+    <script type="text/javascript" src="./handlebars.js.download"></script>
+    <script>
+        var ajaxformID = 25;
+        var endLoaded = 25;
+        var loadingAmount = 25;
+        var source   = document.getElementById("lazy_filemanager_li").innerHTML;
+        var template = Handlebars.compile(source);
+        var total_images = 77;
+        $(document).ready(function(){
+            if (endLoaded >= total_images){
+                $('.load_more').remove();
+                $('.load_all').remove();
+                $('.loaded_amount').html(total_images);
+            }
+        });
+        $('.load_more').click(function(){
+            $.ajax({
+                url: "/directory/cdn/admin/filemanager/ajax_calls.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&action=lazy_load&path=/home/wstan14286/public_html/images/&thumbs_path=/home/wstan14286/public_html/uploads/&sort_by=date&descending=",
+                dataType: "json",
+                type: "GET",
+                data: {startPos: endLoaded, loadingAmount: loadingAmount},
+                success: function(result){
+                    $('.loading').css("opacity","1");
+                    $.each(result, function(index){
+                        console.log(result[index]);
+                        if (result[index]['extension'] != "dir"){
+                            var context = {
+                                file : result[index]['file'],
+                                mini_src : result[index]['mini_src'],
+                                date : result[index]['date_formatted'],
+                                size : result[index]['size'],
+                                img_width : result[index]['img_width'],
+                                img_height  : result[index]['img_height'],
+                                extension  : result[index]['extension'],
+                                form_id : "form" + ajaxformID,
+                                path: result[index]['path'],
+                                filename: result[index]['filename'],
+                                file_js:result[index]['file_js']
+                            };
+
+
+                            if (endLoaded < total_images){
+                                var html = template(context);
+                                $("#main-item-container").append(html);
+                                endLoaded++;
+                                ajaxformID++;
+                            }
+                        }
+
+                    });
+                    $('.loaded_amount').html(endLoaded);
+                    if (endLoaded >= total_images){
+                        $('.load_more').remove();
+                        $('.load_all').remove();
+                    }
+                },
+                complete: function(){
+                    setTimeout(function(){$('.loading').css("opacity","0");}, 2000);
+                }
+            });
+            $('#main-item-container').imagesLoaded(function(){
+                //alert('loading done');
+            });
+        });
+        $('.load_all').click(function(){
+            $('.loading').css("opacity","1");
+            $.ajax({
+                url: "/directory/cdn/admin/filemanager/ajax_calls.php?fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&action=lazy_load&path=/home/wstan14286/public_html/images/&thumbs_path=/home/wstan14286/public_html/uploads/&sort_by=date&descending=",
+                dataType: "json",
+                type: "GET",
+                data: {startPos: endLoaded, loadingAmount: total_images},
+                success: function(result){
+                    $.each(result, function(index){
+                        if (result[index]['extension'] != "dir"){
+                            console.log(result[index]);
+                            var context = {
+                                file : result[index]['file'],
+                                mini_src : result[index]['mini_src'],
+                                date : result[index]['date_formatted'],
+                                size : result[index]['size'],
+                                img_width : result[index]['img_width'],
+                                img_height  : result[index]['img_height'],
+                                extension  : result[index]['extension'],
+                                form_id : "form" + ajaxformID,
+                                path: result[index]['path'],
+                                filename: result[index]['filename'],
+                                file_js:result[index]['file_js']
+                            };
+                            ajaxformID++;
+                            var html = template(context);
+                            $("#main-item-container").append(html);
+                        }
+                    });
+                    $('.load_more').remove();
+                    $('.load_all').remove();
+                    $('.loaded_amount').html(total_images);
+                },
+                complete: function(){
+                    setTimeout(function(){$('.loading').css("opacity","0");}, 5000);
+                }
+            });
+
+        });
+        var files_prevent_duplicate = new Array();
+            </script>
+
+    <!-- lightbox div start -->
+    <div id="previewLightbox" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="lightbox-content">
+            <img id="full-img" src="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111">
+        </div>
+    </div>
+    <!-- lightbox div end -->
+
+    <!-- loading div start -->
+    <div id="loading_container" style="display:none;">
+        <div id="loading" style="background-color:#000; position:fixed; width:100%; height:100%; top:0px; left:0px;z-index:100000"></div>
+        <img id="loading_animation" src="./storing_animation.gif" alt="loading" style="z-index:10001; margin-left:-32px; margin-top:-32px; position:fixed; left:50%; top:50%">
+    </div>
+    <!-- loading div end -->
+
+    <!-- player div start -->
+    <div class="modal hide fade" id="previewAV">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>Preview</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row-fluid body-preview">
+            </div>
+        </div>
+
+    </div>
+    <!-- player div end -->
+    <img id="aviary_img" src="https://www.parentdorf.com/directory/cdn/admin/filemanager/dialog.php?type=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;lang=en_EN&amp;popup=0&amp;field_id=custom_76&amp;akey=key&amp;fldr=%2F&amp;6108d94dae389&amp;reload=1&amp;fmtoken=7bd6a4424d1fd0c81fa7f0f68a9d39cd6e5d0916960e3635a73eef17aac22e9e&amp;rand=20210803055111" class="hide">
+
+    
+    
+    <input type="file" multiple="multiple" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,application/vnd.ms-excel.sheet.macroenabled.12,image/*,application/pdf,application/epub+zip,text/xml,application/xml,application/font-woff,application/font-woff2,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,.ttf,.woff,.woff2,.jfif,.eot" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"></body></html>

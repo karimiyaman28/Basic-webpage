@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+.lonks{
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	transform: translate(-50%,-50%);
+	text-decoration: none;
+	color: #fff;
+	
+	border: 1px solid #fff;
+	background: #fff;
+	color: #333;
+	padding: 6px 14px;
+}
+
+.lonks a{
+	text-decoration: none;
+	color: #333;
+	
+}
+
+
+
+.images{
+	background:#CDCDCD;
+
+	background-repeat: no-repeat;
+	height: 200px;
+	background-size: cover;
+}
+.login{
+	width: 420px;
+	height: 530px;
+	background-color: #fff;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+
+.login h1{
+	text-align: center;
+	margin: 45px 0;
+
+}
+
+.login p{
+	margin: 15px 0;
+    margin-left: 25px;
+	font-size: 17px;
+}
+.login input{
+	width: 85%;
+	padding: 12px 0;
+	height: 10px;
+	
+	margin-left: 25px;
+
+}
+
+.login a{
+	text-decoration: none;
+	color:#0000ff;
+	margin: 23px;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+
+.login button{
+	margin-top: 30px;
+	width: 80%;
+	padding: 15px;
+	text-align: center;
+	margin-left: 35px;
+	background:blue ;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.gn{
+  
+  margin-left: 69px;
+  margin-top: 45px;
+}
+.gn a{
+	margin-left: 5px;
+}
+

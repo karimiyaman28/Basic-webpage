@@ -1,0 +1,78 @@
+.ac_results {
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.1em;
+	padding: 0px;
+	border: 1px solid #666666;
+	border-radius: 0px 0px 6px 6px;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	max-height:500px;
+	min-height:50px;
+	padding-top:0px;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	min-height:50px;
+	max-width:400px !important;
+	width:400px;
+	max-height:500px !important;
+}
+
+.ac_results li {
+	margin: 2px 0 2px 0;
+	padding:0px;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	border: 1px solid #ffffff; 
+	line-height: 16px;
+	overflow: hidden;
+	cursor:pointer;
+}
+
+.ac_loading, .ui-autocomplete-loading {
+	background: white url('http://www.managemydirectory.com/admin/jquery-autocomplete/indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #ffffff;
+	cursor:pointer;
+	border: 1px solid #ffffff; 
+}
+
+.ac_over {
+	background-color: #d0e5f5;
+	color: #1d5987;
+	cursor:pointer;
+	border: 1px solid #79b7e7;
+}
+
+
+
+.ac_over a{
+	color: white !important;
+	cursor:pointer;
+}
+
+.nochange, .ac_over div.nochange {
+	cursor:default;
+	background:none; background-color:#ededed !important;font-size:14px;font-weight:bold;border:1px solid #ffffff !important;padding:4px;color:#000000 !important;
+}
+.nochange:hover  {
+	cursor:default;
+	background:none; background-color:#ededed !important;font-size:14px;font-weight:bold;border:1px solid #ffffff !important;padding:4px;color:#000000 !important;
+}

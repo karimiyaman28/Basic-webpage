@@ -1,0 +1,349 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:  #DDDEE7;
+    
+}
+
+.lonks{
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	transform: translate(-50%,-50%);
+	text-decoration: none;
+	color: #fff;
+	list-style: none;
+	border: 1px solid #fff;
+	background: #fff;
+	color: #333;
+	padding: 6px 14px;
+}
+.lonks i{
+    margin-left: -7px;
+}
+.lonks a{
+	text-decoration: none;
+	color: #333;
+	margin-left: 7px;
+}
+
+.image{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),     url(../images/port.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 630px;
+}
+
+
+
+nav ul{
+	margin-top: 36px;
+	float: right;
+	list-style: none;
+	margin-right: 300px;
+	
+}
+nav ul li{
+	display: inline-block;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	margin-right: 50px;
+
+}
+
+a.active{
+	border: 1px solid #fff;
+	padding: 6px 17px;
+	background: #fff;
+	color: #333;
+}
+
+.logo{
+	float: left;
+	color: #fff;
+	padding: 26px;
+	margin-left: 200px;
+	font-size: 18px;
+}
+
+.image h1{
+	position: absolute;
+	top: 25%;
+	left: 29%;
+	transform: translate(-50%,-50%);
+	font-size: 33px;
+	color: #fff;
+}
+.image p{
+		position: absolute;
+	top: 37%;
+	left: 34%;
+	transform: translate(-50%,-50%);
+	line-height: 1.4em;
+	color: #fff;
+    
+}
+
+.links {
+		position: absolute;
+	top: 49%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	
+	color: #fff;
+}
+.links a{
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 8px 20px;
+	border-radius: 25px;
+	margin-right: 25px;
+}
+
+ .hexcolor{
+ 	background: #FF420E;
+ }
+
+ .container{
+ 	float: left;
+ 	margin-top: 35px;
+ 	margin-left: 147px;
+ 	justify-content: space-between;
+ 	
+ 	
+ }
+
+ .font{
+ 	display: inline-block;
+
+ }
+
+ .font h3{
+ 	margin-left: 55px;
+ 	margin-top: -30px;
+ 	text-transform: uppercase;
+ 	font-size: 19px;
+ }
+ .font i{
+    font-size: 40px;
+}
+
+
+.font p{
+	line-height: 1.4em;
+	margin-top: 22px;
+	justify-content: space-between;
+	margin-left: 49px;
+}
+
+
+.para{
+	padding: 60px;
+	float: left;
+}
+
+.para h2{
+	margin-left: 60px;
+	font-size: 25px;
+
+}
+
+.para p{
+	line-height: 1.4em;
+	margin-top: 20px;
+	margin-left: 65px;
+}
+.myskill{
+	position: absolute;
+	top: 134%;
+	left: 58%;
+	transform: translate(-50%,-50%);
+
+}
+.myskill h2{
+	font-size: 24px;
+
+}
+.webdesign{
+	margin: 17px 0;
+
+}
+
+.webdesign h3{
+	font-size: 17px;
+}
+.webdesigns{
+	width: 97%;
+	background-color: #FF420E;
+	border: 1px solid #fff;
+	padding: 12px 130px;
+	border-radius: 3px;
+	margin: 10px 0;
+}
+
+.html{
+	margin: 23px 0;
+}
+.html h3{
+	font-size: 17px;
+}
+.mission-2{
+	width: 89%;
+	background-color: #FF420E;
+	border: 1px solid #fff;
+	padding: 12px 89px;
+	margin: 10px 0;
+	border-radius: 3px;
+}
+
+.CSS{
+	margin: 17px 0;
+
+}
+.CSS h3{
+	font-size: 17px;
+}
+.CSSS{
+	width: 78%;
+	background: #FF420E;
+
+
+    border: 1px solid #fff;
+    padding: 12px 85px;
+    border-radius: 3px;
+
+
+}
+
+.JavaScript{
+	margin: 17px 0;
+}
+
+.Javas{
+	width: 50%;
+	background-color: #FF420E;
+	border: 1px solid #fff;
+	padding: 12px 70px;
+	border-radius: 3px;
+}
+
+.clients{
+	position: absolute;
+	top: 165%;
+	left: 31%;
+	transform: translate(-50%,-50%);
+}
+
+.clients h2{
+	
+	font-size: 25px;
+}
+
+.clienimage{
+	list-style: none;
+	margin-top: 20px;
+	display: inline-block;
+	padding: 30px;
+   font-size: 27px;
+   margin-left: 30px;
+}
+
+.lost{
+	background: #333;
+	float: left;
+	margin-top: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	
+	width: 100%;
+	padding: 100px 0;
+	color: #fff;
+}
+
+.company{
+	list-style: none;
+	float: left;
+	margin-left: 300px;
+
+}
+
+
+.company ul{
+	list-style: none;
+	margin-top: 18px;
+	text-align: center;
+	line-height: 1.9em;
+}
+.company li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.company li a:hover{
+	color: #FF420E;
+	border-bottom: 2px solid #FF420E;
+
+}
+.contact{
+	text-align: center;
+	margin-left: 250px;
+
+}
+
+.contact h2{
+	
+}
+.contact h4{
+	font-size: 17px;
+	margin-top: 16px;
+	color: #FF420E;
+}
+.contact p{
+	font-size: 15px;
+	margin-top: 5px;
+}
+.contact h3{
+	margin-top: 7px;
+	font-size: 20px;
+}
+.contact i{
+	margin-top: 24px;
+	list-style: none;
+	font-size: 21px;
+	margin-left: 5px;
+
+}
+
+.address{
+	margin-left: 210px;
+	text-align: center;
+	
+}
+
+.address p{
+	margin-top: 15px;
+	line-height: 1.9em;
+}
+
+
+.copy{
+	position: absolute;
+	left: 48%;
+	top: 214%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	font-size: 16px;
+}
+.copy span{
+    color: #FF420E;
+}
+

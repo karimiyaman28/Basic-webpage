@@ -1,0 +1,124 @@
+function numberWithCommas(number) {
+    return number.toString().replace(/\D/g,'').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+if(typeof decodeHtml != 'function'){
+    function decodeHtml(html) {
+        var txt = document.createElement("textarea");
+        txt.innerHTML = html;
+        return txt.value;
+    }
+}
+$('.website-search').submit(function(event){
+    var allInputs = $(this).find('input:not([type=hidden])');
+    var allSelects = $(this).find('select');
+    var inputsToClean = $.merge(allInputs, allSelects)
+    var input, i;
+
+    for(i = 0; input = inputsToClean[i]; i++) {
+        if(input.getAttribute('name') && !input.value) {
+            input.setAttribute('name', '');
+        }
+    }
+})
+$(document).on('paste', 'input[type="email"]', function(e) {
+    e.preventDefault();
+    var withoutSpaces = e.originalEvent.clipboardData.getData('Text');
+    withoutSpaces = withoutSpaces.replace(/\s+/g, '');
+    $(this).val(withoutSpaces);
+});
+
+// Script to trigger form validation when content is pasted in inputs
+$(document).on("paste", ".form-control", function(e) {
+    $(".fv-form").formValidation("revalidateField", $(this).attr("data-fv-field"));
+    if($(this).attr('name') == 'email'){
+        if($('[name="email_confirm"]').val() != ''){
+            $(".fv-form").formValidation("revalidateField", $('[name="email_confirm"]').attr("data-fv-field"));
+        }
+    }
+});
+
+function nl2br (str, is_xhtml) {
+    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
+}
+if(typeof $.fancybox == 'function') {
+    $('.reviews-images-fancybox').fancybox({
+        buttons: [
+            "close"
+        ],
+        loop: true
+    });
+}
+
+function matchYoutubeUrl(url) {
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    var matches = url.match(p);
+    if(matches){
+        return matches[1];
+    }
+    return false;
+}
+
+// Script to validate Youtube/Vimeo urls in photo albums manage photos section
+$('.video_field').keyup(function(){
+    $(this).val($.trim($(this).val()));
+    const url = $(this).val();
+    const thisElement = $(this);
+    if(url != ""){
+        let validUrl = false;
+        $.ajax({
+            url: 'https://vimeo.com/api/oembed.json?url=' + url,
+            type: 'GET',
+            success: function(data) {
+                if (data != null && data.video_id > 0){
+                    validUrl = true;
+                    thisElement.parent('div').removeClass('has-error');
+                    thisElement.parent('div').find('.error').remove();
+                    thisElement.parents('form').find('[type="submit"]').prop('disabled', false);
+                }
+            },
+            error: function(data) {
+                var isYoutubeUrl = matchYoutubeUrl(url);
+                console.log(isYoutubeUrl);
+                if(isYoutubeUrl !== false){
+                    console.log('its a youtube link');
+                    thisElement.parent('div').removeClass('has-error');
+                    thisElement.parent('div').find('.error').remove();
+                    thisElement.parents('form').find('[type="submit"]').prop('disabled', false);
+                } else {
+                    console.log('not valid at all');
+                    if(!thisElement.parent('div').hasClass('has-error')){
+                        thisElement.parent('div').addClass('has-error');
+                        thisElement.parent('div').append('<small class="help-block error" data-fv-validator="notEmpty" data-fv-for="post_video" data-fv-result="INVALID" style="">'+thisElement.attr('data-error-label')+'</small>')
+                    }
+                    thisElement.parents('form').find('[type="submit"]').prop('disabled', 'true');
+
+                }
+            }
+        });
+    } else {
+        thisElement.parent('div').removeClass('has-error');
+        thisElement.parent('div').find('.error').remove();
+        thisElement.parents('form').find('[type="submit"]').prop('disabled', false);
+    }
+})
+
+// Code to remove html from title tags with html
+$(document).ready(function(){
+    $('a[title*="<"]').each(function(){
+        $(this).attr('title',   $(this).attr('title').replace(/(<([^>]+)>)/ig,""));
+    })
+})
+
+$(window).load(function(){
+    $('.rsContainer > div').each(function(index){
+        if($(this).find('.rsPlayBtn').length){
+            $('.rsThumbsContainer').children().eq(index).addClass('thisHasVideo');
+        }
+    })
+})
+
+$(document).on("click", ".tt-suggestion[data-state='novalue']", function(e) {
+    e.preventDefault();
+})

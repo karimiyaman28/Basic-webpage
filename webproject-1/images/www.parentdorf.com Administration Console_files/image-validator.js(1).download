@@ -1,0 +1,316 @@
+class imageValidator{
+    constructor(options){
+        this.setDefaults(options);
+    }
+
+    setDefaults(options){
+        var defaults = {
+            image:{},
+            mimeTypes:[
+                'application/msword',
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                'image/gif',
+                'image/jpeg',
+                'image/pjpeg',
+                'image/png',
+                'image/webp',
+                'image/x-icon',
+                'image/vnd.microsoft.icon',
+                'application/pdf',
+                'image/svg+xml',
+                'application/epub+zip',
+                'application/xml',
+                'application/font-woff',
+                'application/font-woff2',
+                'text/xml',
+                'application/vnd.ms-powerpoint',
+                'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+                'font/ttf',
+                'application/x-font-ttf',
+                'application/x-font-woff',
+                'application/x-font-woff2',
+                'application/vnd.ms-excel',
+                'application/vnd.ms-excel.sheet.macroenabled.12',
+                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                'application/vnd.ms-fontobject',
+                'font/woff',
+                'font/woff2'
+            ],
+            extensions:[
+                'doc',
+                'docx',
+                'png',
+                'jpg',
+                'jpeg',
+                'jfif',
+                'gif',
+                'pdf',
+                'svg',
+                'webp',
+                'epub',
+                'xml',
+                'ppt',
+                'pptx',
+                'ttf',
+                'ico',
+                'xls',
+                'xlsm',
+                'xlsx',
+                'eot',
+                'woff',
+                'woff2'
+            ],
+            sizeAllowed:50000000,
+            sizeNameAllowed:255,
+            isFrontendValid:false,
+            isBackendValid:false,
+            isImageValid:false,
+            isRunning:false,
+            isDone:false,
+            closeModal: true,
+            ajaxUrl:'',
+            extraParams:{},
+            swalValidationTitle:'File Validation',
+            swalValidationMessage:'Please wait a moment while your file is validated.',
+            completed:function(){},
+            progress:function(){},
+            success:function(){},
+            error:function(){},
+        }
+
+        var that = this;
+
+        if($.isEmptyObject(defaults) == false){
+            $.each( defaults, function( key, value ) {
+                that[''+key+''] = value;
+            });
+        }
+
+        if($.isEmptyObject(options) == false){
+            $.each( options, function( key, value ) {
+                that[key] = value;
+            });
+        }
+    }
+
+    run(){
+        this.isRunning = true;
+        this.__progressCallBack();
+        this.__validateImage();
+    }
+
+    isValidatorDone(){
+        if(!this.isRunning){
+            this.isDone = true;
+        }
+
+        if(this.isDone && this.isFrontendValid && this.isBackendValid){
+            this.isImageValid   = true;
+        }
+
+        return this.isDone;
+    }
+
+    done(){
+
+        this.isRunning          = false;
+        this.isValidatorDone();
+
+        this.isDone             = false;
+        this.isFrontendValid    = false;
+        this.isBackendValid     = false;
+
+        if(this.isImageValid){
+            this.__completedCallBack();
+        }else{
+            this.__errorCallBack();
+        }
+
+        return this.isImageValid;
+    }
+
+    setExtraParams(extraParams){
+        this.extraParams = extraParams;
+    }
+
+    __validateMimeTypes(){
+        if( this.image.type == "" || $.inArray(this.image.type, this.mimeTypes) > -1){
+            this.isFrontendValid = true;
+        }else{
+            this.isFrontendValid = false;
+        }
+    }
+
+    __validateExtensions(){
+
+        var extension   = this.image.name.split('.').pop();
+        extension       = extension.toLowerCase();
+
+        if($.inArray(extension, this.extensions) > -1){
+            this.isFrontendValid = true;
+        }else{
+            this.isFrontendValid = false;
+        }
+    }
+
+    __validateSize(){
+        if(this.image.size <= this.sizeAllowed){
+            this.isFrontendValid = true;
+        }else{
+            this.isFrontendValid = false;
+        }
+    }
+
+    __validateFileName(){
+
+        var executables     = ['.php','.html','.css','.phar','.ssh'];
+        var executableFound = false;
+        var that            = this;
+
+        $.each(executables,function(key,value){
+            if(that.image.name.indexOf(value) > -1){
+                executableFound = true;
+            }
+        });
+
+        if(this.image.name.length > 0 && this.image.name.length <= this.sizeNameAllowed && executableFound === false){
+            this.isFrontendValid = true;
+        }else{
+            this.isFrontendValid = false;
+        }
+    }
+
+
+    __progressCallBack(){
+        this.progress();
+    }
+
+    __succesCallBack(){
+        this.success();
+    }
+
+    __errorCallBack(){
+        this.error();
+    }
+
+    __completedCallBack(){
+        this.completed();
+    }
+
+    __validateImage(){
+
+        this.__validateImageInFrontEnd();
+
+        if(this.isFrontendValid){
+            this.__validateImageInBackEnd();
+        }else{
+            this.done();
+        }
+    }
+
+    /*
+    * function to set all settings from js object to be sent in ajax
+    *
+    */
+    __setSettings(){
+        var settings = {};
+
+        settings.mimeTypes          = this.mimeTypes;
+        settings.extensions         = this.extensions;
+        settings.sizeAllowed        = this.sizeAllowed;
+        settings.sizeNameAllowed    = this.sizeNameAllowed;
+
+        return settings;
+    }
+
+    __validateImageInBackEnd(){
+
+        var that = this;
+
+        swal({
+            showCancelButton:   false,
+            showConfirmButton:  false,
+            closeOnConfirm:     true,
+            allowOutsideClick:  false,
+            allowEscapeKey:     false,
+            imageUrl:           '//www.securemypayment.com/directory/cdn/images/bars-loading.gif',
+            title:              that.swalValidationTitle,
+            text:               that.swalValidationMessage
+        });
+
+        var params      = {};
+
+        params                  = this.__setSettings();
+        params['widget_name']   = 'Admin - Bootstrap Theme - Function - Image Validation';
+        params['request_type']  = "POST";
+        params['header_type']   = "json";
+        params['imageFile']     = this.image;
+
+        var formData = new FormData();
+
+        if($.isEmptyObject(this.extraParams) == false){
+            $.each( this.extraParams, function( key, value ) {
+                params[key] = value;
+            });
+        }
+
+        if($.isEmptyObject(params) == false){
+            $.each( params, function( key, value ) {
+                formData.append(key,value);
+            });
+        }
+
+        $.ajax({
+            url:this.ajaxUrl,
+            type: "POST",
+            dataType: "json",
+            data:formData,
+            cache:false,
+            contentType: false,
+            processData: false,
+            success:function(result){
+
+                if(that.closeModal){
+                    if(typeof swal.closeModal === "function"){
+                        swal.closeModal();
+                    }else if(typeof swal.close === "function"){
+                        swal.close();
+                    }
+                }
+
+                if(result.status == true){
+                    that.isBackendValid = true;
+                }else{
+                    that.isBackendValid = false;
+                }
+
+                if(that.done()){
+                    that.__succesCallBack();
+                }
+
+            }
+        });
+    }
+
+    __validateImageInFrontEnd(){
+        this.__validateMimeTypes();
+        var mimeTypesFlag   = this.isFrontendValid;
+
+        this.__validateExtensions();
+        var extensionsFlag  = this.isFrontendValid;
+
+        this.__validateSize();
+        var sizeBytesFlag   = this.isFrontendValid;
+
+        this.__validateFileName();
+        var fileNameFlag    = this.isFrontendValid;
+
+        if(mimeTypesFlag && extensionsFlag && sizeBytesFlag && fileNameFlag){
+            this.isFrontendValid = true;
+        }else{
+            this.isFrontendValid = false;
+        }
+
+
+    }
+}
