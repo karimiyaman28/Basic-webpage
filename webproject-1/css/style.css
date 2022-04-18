@@ -1,9 +1,11 @@
 *{
 	margin: 0;
 	padding: 0;
-
+    
 }
-
+body{
+	overflow-x: hidden !important ;
+}
 
 .banner{
 	background: #7abcff;
@@ -11,7 +13,6 @@
 	width: 100%;
 	color: #fff;
 	margin-top: 0;
-	
 }
 .banner h3{
 	position: absolute;
@@ -150,7 +151,13 @@
 
 }
 
+@media screen and (max-width: 900px) {
+	.links{
+		float: left;
+		margin-left: 220px;
 
+	}
+}
 
 
 #navbars.fixed{
@@ -634,6 +641,7 @@ footer{
 	margin-left: 560px;
 	font-size: 17px;
 	margin-top: 35px;
+	overflow-x: hidden;
 }
 
 footer span{
