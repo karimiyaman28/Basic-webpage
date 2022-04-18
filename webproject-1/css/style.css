@@ -130,7 +130,7 @@
 
 .links {
 	float: right;
-    margin-right: -710px;
+    margin-right: -630px;
     margin-top: 19px;
     
 }
@@ -139,8 +139,7 @@
 	text-decoration: none;
 	color: #000;
 	border: 1px solid #fff;
-	padding: 8px 30px;
-	
+	padding: 8px 26px;
 	margin-right: 5px;
 	border-radius: 23px;
 	
@@ -330,19 +329,19 @@
 	.intro a{
 		position: absolute;
 		left: 15%;
-		top: 90%;
+		top: 95%;
 	}
 	.intro img{
 		position: absolute;
 		left: 27%;
-		top: 97%;
+		top: 103%;
        width: 260px;
        height: 200px;
 	}
 	.nar{
 		position: absolute;
 		left: 28%;
-		top: 122%;
+		top: 128%;
 	}
 }
 

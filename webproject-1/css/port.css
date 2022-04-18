@@ -242,16 +242,17 @@
 	}
 	.know img{
 		float: left;
-		margin-left: 76px;
+		margin-left: 80px;
 		margin-top: 22px;
+		width: 160px;
 
 	}
 	.know h3{
-		margin-left: 87px;
+		margin-left: 79px;
 		margin-top: 17px;
 	}
 	.know p{
-		margin-top: 25px;
+		margin-top: 20px;
 		margin-left: 80px;
 	}
 }
@@ -262,7 +263,7 @@
 .skillbar{
 	position: absolute;
 	top: 116%;
-	left: 56%;
+	left: 52.3%;
 	transform: translate(-50%,-50%);
 
 }
@@ -301,6 +302,7 @@
 .r3{
 	width: 50%;
 	animation: r3 2s;
+	
 }
 
 @keyframes r1{
@@ -322,9 +324,9 @@
 }
 
 @keyframes r3{
-	0%{
-        width: 0;
-	}
+    0%{
+    	width: 0%;
+    }
 	100%{
 		width: 50%;
 	}
@@ -335,7 +337,7 @@
 @media screen and (max-width: 900px) {
 	.skillbar{
 		position: absolute;
-		top: 155%;
+		top: 146%;
 		left: 58%;
 	}
 }
@@ -449,7 +451,7 @@
 	}
 	.myservice{
 		position: absolute;
-		top: 174%;
+		top: 168%;
 		left: 55%;
 	}
 	.flex{
